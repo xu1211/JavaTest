@@ -1,4 +1,4 @@
-package Thread;
+package Thread.threadPool;
 
 import java.util.concurrent.TimeUnit;
 
@@ -8,7 +8,8 @@ import java.util.concurrent.TimeUnit;
 public class TestThread {
 
     public static void main(String[] args) {
-        // 初始化自定义线程池，创建线程
+
+        // 1.自己写一个线程池实现
         MyThreadPool pool = new MyThreadPool();
         // 任务生产者
         for (int i = 0; i < 5; i++) {
@@ -31,7 +32,7 @@ public class TestThread {
             }
         }
 
-        // 初始化java线程池，创建线程
+        // 2. 使用java自带线程池
         JavaThreadPool ThreadPool = new JavaThreadPool();
         for (int i = 0; i < 20; i++) {
 

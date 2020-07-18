@@ -1,4 +1,4 @@
-package jc;
+package extendsTest;
 
 public interface AD {
     public void physicAttack();

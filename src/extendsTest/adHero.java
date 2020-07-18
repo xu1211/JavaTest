@@ -1,8 +1,8 @@
-package jc;
+package extendsTest;
 
-public class apHero extends Hero implements AP{
+public class adHero extends Hero implements AD{
 
-    apHero(String name,float hp,float armor,int moveSpeed){
+    adHero(String name,float hp,float armor,int moveSpeed){
         this.name=name;
         this.hp=hp;
         this.armor=armor;
@@ -15,7 +15,7 @@ public class apHero extends Hero implements AP{
     }
 
     @Override
-    public void magicAttack() {
-        System.out.println("AP英雄可以进行魔法攻击");
+    public void physicAttack() {
+        System.out.println("AD英雄可以进行物理攻击");
     }
 }

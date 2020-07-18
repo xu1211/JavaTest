@@ -1,9 +1,8 @@
 package Thread;
 
-import Thread.JavaThreadPool;
-
-import java.util.concurrent.TimeUnit;
-
+/**
+ * 多线程案例
+ */
 class Demo1 extends Thread {
 
     @Override  //把自定义线程的任务代码写在run方法中

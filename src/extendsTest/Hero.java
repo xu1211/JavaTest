@@ -1,4 +1,4 @@
-package jc;
+package extendsTest;
 
 public abstract class Hero {
     String name; //姓名
