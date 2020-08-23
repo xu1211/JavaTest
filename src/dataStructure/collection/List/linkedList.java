@@ -51,7 +51,7 @@ public class linkedList {
      * @param list
      */
     public static void STACK(LinkedList list){
-        System.out.println("入栈");
+        System.out.println("初始化栈");
         for(int i = 0; i < 10; i++){
             list.push(i);
         }
