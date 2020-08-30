@@ -1,5 +1,6 @@
 package extendsTest;
 
+// 抽象类 可以定义属性，非抽象的方法
 public abstract class Hero {
     String name; //姓名
 

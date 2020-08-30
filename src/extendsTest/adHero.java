@@ -1,5 +1,6 @@
 package extendsTest;
 
+// 实现类 可以继承抽象类，实现接口
 public class adHero extends Hero implements AD{
 
     adHero(String name,float hp,float armor,int moveSpeed){
