@@ -2,6 +2,8 @@ package Thread;
 
 /**
  * 多线程案例
+ *
+ * main线程 与 自定义线程 同时运行
  */
 class Demo1 extends Thread {
 
@@ -13,7 +15,7 @@ class Demo1 extends Thread {
     }
 }
 
-public class Test {
+public class threadTest {
     public static void main(String[] args) {
         //main线程
         for (int i = 0; i < 100; i++) {
