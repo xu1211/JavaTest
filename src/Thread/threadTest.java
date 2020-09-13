@@ -5,7 +5,7 @@ package Thread;
  *
  * main线程 与 自定义线程 同时运行
  */
-class Demo1 extends Thread {
+class threadDemo extends Thread {
 
     @Override  //把自定义线程的任务代码写在run方法中
     public void run() {
@@ -23,7 +23,7 @@ public class threadTest {
         }
 
         //自定义线程
-        Demo1 d = new Demo1();
+        threadDemo d = new threadDemo();
         d.start();
 
     }

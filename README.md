@@ -20,10 +20,11 @@
 
   - [多线程](./src/Thread/threadTest.java)
   - [ThreadLocal](./src/Thread/threadLocal/threadLocalTest.java)
+  - [多线程通讯](./src/Thread/communication/communication.java)
   - 线程池
     - [线程池简单实现](./src/Thread/threadPool/MyThreadTest.java)
     - [Java自带线程池](./src/Thread/threadPool/JavaThreadTest.java)
-    - [线程池执行任务的几种方法](./src/Thread/threadPool/submit.java)
+    - [execute 与 submit](./src/Thread/threadPool/submit.java)
 ## [数据结构](./src/dataStructure)
 - 数组 array
 - 链表 linked list

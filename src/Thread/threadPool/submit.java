@@ -11,7 +11,7 @@ import java.util.concurrent.*;
  * 3.submit(Runnable,result)
  * 4.submit(Callable)
  *
- * Runnable任务没返回值，Callable任务有返回值；
+ * Runnable任务不会返回结果或抛出异常，Callable任务会；
  * execute()不能获取任务状态，submit()方法可以通过get()获取任务状态；
  * get()方法有阻塞性，调用后主线程会阻塞，等到任务执行完毕拿到了返回值，主线程才会继续运行
  */
