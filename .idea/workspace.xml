@@ -10,11 +10,22 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bb6ae969-804f-4729-8286-602af9014c20" name="Default Changelist" comment="" />
+    <list default="true" id="bb6ae969-804f-4729-8286-602af9014c20" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -25,23 +36,109 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="Downloaded.Files.Path.Enabled" value="false" />
+    <property name="Repository.Attach.Annotations" value="false" />
+    <property name="Repository.Attach.JavaDocs" value="false" />
+    <property name="Repository.Attach.Sources" value="false" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../xu1211" />
     <property name="project.structure.last.edited" value="Modules" />
-    <property name="project.structure.proportion" value="0.0" />
-    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\Code\github\JavaTest\src\algorithm" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\Code\github\JavaTest\src" />
       <recent name="D:\Code\github\JavaTest\src\extends" />
     </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="Thread.并发" />
+      <recent name="Thread.threadPool" />
+      <recent name="dataStructure.collection.List" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Code\github\JavaTest\src\algorithm" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.SynchronizedClassTest1">
+    <configuration name="SynchronizedClassTest1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Thread.并发.Synchronized代码块.SynchronizedClassTest1" />
+      <module name="JavaTest" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Thread.并发.Synchronized代码块.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SynchronizedObjTest1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Thread.并发.Synchronized代码块.SynchronizedObjTest1" />
+      <module name="JavaTest" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Thread.并发.Synchronized代码块.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SynchronizedThisTest1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Thread.并发.Synchronized代码块.SynchronizedThisTest1" />
+      <module name="JavaTest" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Thread.并发.Synchronized代码块.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="communication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Thread.communication.communication" />
+      <module name="JavaTest" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Thread.communication.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="submit" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Thread.threadPool.submit" />
+      <module name="JavaTest" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Thread.threadPool.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.SynchronizedClassTest1" />
+        <item itemvalue="Application.SynchronizedObjTest1" />
+        <item itemvalue="Application.SynchronizedThisTest1" />
+        <item itemvalue="Application.communication" />
+        <item itemvalue="Application.submit" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -54,6 +151,36 @@
       <option name="presentableId" value="Default" />
       <updated>1594208742186</updated>
       <workItem from="1594208744414" duration="4212000" />
+      <workItem from="1594304503828" duration="1510000" />
+      <workItem from="1594430329444" duration="16868000" />
+      <workItem from="1594521730707" duration="13702000" />
+      <workItem from="1595042304190" duration="1226000" />
+      <workItem from="1595415283459" duration="2839000" />
+      <workItem from="1595651775306" duration="1198000" />
+      <workItem from="1595740360311" duration="2382000" />
+      <workItem from="1595762607104" duration="644000" />
+      <workItem from="1596252697531" duration="1379000" />
+      <workItem from="1596460737211" duration="3768000" />
+      <workItem from="1596544369599" duration="599000" />
+      <workItem from="1596722749723" duration="253000" />
+      <workItem from="1596937755525" duration="5172000" />
+      <workItem from="1597059090083" duration="3000" />
+      <workItem from="1597063483109" duration="1104000" />
+      <workItem from="1598080248352" duration="3319000" />
+      <workItem from="1598154061529" duration="3877000" />
+      <workItem from="1598528575680" duration="1204000" />
+      <workItem from="1598670947785" duration="1516000" />
+      <workItem from="1598672486120" duration="12831000" />
+      <workItem from="1598772421327" duration="18000" />
+      <workItem from="1598777774591" duration="2042000" />
+      <workItem from="1599831018159" duration="6085000" />
+      <workItem from="1599902574694" duration="18277000" />
+      <workItem from="1599997724026" duration="7893000" />
+      <workItem from="1601209758680" duration="433000" />
+      <workItem from="1602601571078" duration="36000" />
+      <workItem from="1602673248931" duration="8702000" />
+      <workItem from="1602687717961" duration="770000" />
+      <workItem from="1602766465398" duration="3757000" />
     </task>
     <servers />
   </component>
@@ -70,11 +197,52 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="255" y="0" key="SettingsEditor" timestamp="1594218331638">
+    <state x="568" y="321" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.packages" timestamp="1594534805793">
       <screen x="0" y="0" width="1549" height="831" />
     </state>
-    <state x="255" y="0" key="SettingsEditor/0.0.1549.831@0.0.1549.831" timestamp="1594218331638" />
+    <state x="568" y="321" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.packages/0.0.1549.831@0.0.1549.831" timestamp="1594534805793" />
+    <state x="119" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1602684765419">
+      <screen x="0" y="0" width="1549" height="831" />
+    </state>
+    <state x="119" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1549.831@0.0.1549.831" timestamp="1602684765419" />
+    <state x="555" y="156" key="FileChooserDialogImpl" timestamp="1597063507778">
+      <screen x="0" y="0" width="1549" height="831" />
+    </state>
+    <state x="555" y="156" key="FileChooserDialogImpl/0.0.1549.831@0.0.1549.831" timestamp="1597063507778" />
+    <state width="1506" height="213" key="GridCell.Tab.0.bottom" timestamp="1602689591249">
+      <screen x="0" y="0" width="1549" height="831" />
+    </state>
+    <state width="1506" height="213" key="GridCell.Tab.0.bottom/0.0.1549.831@0.0.1549.831" timestamp="1602689591249" />
+    <state width="1506" height="213" key="GridCell.Tab.0.center" timestamp="1602689591249">
+      <screen x="0" y="0" width="1549" height="831" />
+    </state>
+    <state width="1506" height="213" key="GridCell.Tab.0.center/0.0.1549.831@0.0.1549.831" timestamp="1602689591249" />
+    <state width="1506" height="213" key="GridCell.Tab.0.left" timestamp="1602689591249">
+      <screen x="0" y="0" width="1549" height="831" />
+    </state>
+    <state width="1506" height="213" key="GridCell.Tab.0.left/0.0.1549.831@0.0.1549.831" timestamp="1602689591249" />
+    <state width="1506" height="213" key="GridCell.Tab.0.right" timestamp="1602689591249">
+      <screen x="0" y="0" width="1549" height="831" />
+    </state>
+    <state width="1506" height="213" key="GridCell.Tab.0.right/0.0.1549.831@0.0.1549.831" timestamp="1602689591249" />
+    <state x="255" y="0" key="SettingsEditor" timestamp="1597068722604">
+      <screen x="0" y="0" width="1549" height="831" />
+    </state>
+    <state x="255" y="0" key="SettingsEditor/0.0.1549.831@0.0.1549.831" timestamp="1597068722604" />
+    <state x="489" y="307" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD" timestamp="1599837333071">
+      <screen x="0" y="0" width="1549" height="831" />
+    </state>
+    <state x="489" y="307" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD/0.0.1549.831@0.0.1549.831" timestamp="1599837333071" />
+    <state x="179" y="51" key="new project wizard" timestamp="1595745272513">
+      <screen x="0" y="0" width="1549" height="831" />
+    </state>
+    <state x="179" y="51" key="new project wizard/0.0.1549.831@0.0.1549.831" timestamp="1595745272513" />
+    <state x="437" y="152" width="672" height="678" key="search.everywhere.popup" timestamp="1602673441803">
+      <screen x="0" y="0" width="1549" height="831" />
+    </state>
+    <state x="437" y="152" width="672" height="678" key="search.everywhere.popup/0.0.1549.831@0.0.1549.831" timestamp="1602673441803" />
   </component>
 </project>
