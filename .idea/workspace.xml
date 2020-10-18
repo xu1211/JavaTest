@@ -11,12 +11,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bb6ae969-804f-4729-8286-602af9014c20" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/Thread/并发/CAS/Atomic1.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Thread/communication/communication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Thread/communication/communication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Thread/并发/Synchronized代码块/SynchronizedClassTest2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Thread/并发/Synchronized代码块/SynchronizedClassTest2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Thread/并发/Synchronized代码块/SynchronizedObjTest1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Thread/并发/Synchronized代码块/SynchronizedObjTest1.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Thread/并发/Synchronized代码块/SynchronizedThsiTest2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Thread/并发/Synchronized代码块/SynchronizedThsiTest2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Thread/并发/CAS/CAS.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Thread/并发/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/Thread/并发/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,62 +59,49 @@
       <recent name="D:\Code\github\JavaTest\src\extends" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="Thread.并发.CAS" />
       <recent name="Thread.并发.Lock" />
       <recent name="Thread.并发.Synchronized代码块" />
       <recent name="Thread.并发.Synchronized方法" />
       <recent name="Thread.并发" />
-      <recent name="Thread.threadPool" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\Code\github\JavaTest\src\algorithm" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.LockCommunicationTest1">
+  <component name="RunManager" selected="Application.Atomic2">
+    <configuration name="Atomic1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Thread.并发.CAS.Atomic1" />
+      <module name="JavaTest" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Thread.并发.CAS.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Atomic2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Thread.并发.CAS.Atomic2" />
+      <module name="JavaTest" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Thread.并发.CAS.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="LockCommunicationTest1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Thread.并发.Lock.LockCommunicationTest1" />
       <module name="JavaTest" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="Thread.并发.Lock.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="LockTest1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Thread.并发.Lock.LockTest1" />
-      <module name="JavaTest" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Thread.并发.Lock.LockTest1" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="LockTest2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Thread.并发.Lock.LockTest2" />
-      <module name="JavaTest" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Thread.并发.Lock.LockTest1" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="SynchronizedObjTest1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Thread.并发.Synchronized代码块.SynchronizedObjTest1" />
-      <module name="JavaTest" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Thread.并发.Synchronized代码块.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -137,13 +122,26 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="defectOfABA" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Thread.并发.CAS.defectOfABA" />
+      <module name="JavaTest" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Thread.并发.CAS.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Atomic2" />
+        <item itemvalue="Application.Atomic1" />
+        <item itemvalue="Application.defectOfABA" />
         <item itemvalue="Application.LockCommunicationTest1" />
         <item itemvalue="Application.SynchronizedObjTest2" />
-        <item itemvalue="Application.SynchronizedObjTest1" />
-        <item itemvalue="Application.LockTest2" />
-        <item itemvalue="Application.LockTest1" />
       </list>
     </recent_temporary>
   </component>
@@ -189,7 +187,7 @@
       <workItem from="1602687717961" duration="770000" />
       <workItem from="1602766465398" duration="3757000" />
       <workItem from="1602859692326" duration="2570000" />
-      <workItem from="1602985864227" duration="12154000" />
+      <workItem from="1602985864227" duration="17033000" />
     </task>
     <servers />
   </component>
@@ -225,22 +223,22 @@
       <screen x="0" y="0" width="1549" height="831" />
     </state>
     <state x="555" y="156" key="FileChooserDialogImpl/0.0.1549.831@0.0.1549.831" timestamp="1597063507778" />
-    <state width="1506" height="213" key="GridCell.Tab.0.bottom" timestamp="1603003187884">
+    <state width="1506" height="213" key="GridCell.Tab.0.bottom" timestamp="1603030074250">
       <screen x="0" y="0" width="1549" height="831" />
     </state>
-    <state width="1506" height="213" key="GridCell.Tab.0.bottom/0.0.1549.831@0.0.1549.831" timestamp="1603003187884" />
-    <state width="1506" height="213" key="GridCell.Tab.0.center" timestamp="1603003187884">
+    <state width="1506" height="213" key="GridCell.Tab.0.bottom/0.0.1549.831@0.0.1549.831" timestamp="1603030074250" />
+    <state width="1506" height="213" key="GridCell.Tab.0.center" timestamp="1603030074250">
       <screen x="0" y="0" width="1549" height="831" />
     </state>
-    <state width="1506" height="213" key="GridCell.Tab.0.center/0.0.1549.831@0.0.1549.831" timestamp="1603003187884" />
-    <state width="1506" height="213" key="GridCell.Tab.0.left" timestamp="1603003187884">
+    <state width="1506" height="213" key="GridCell.Tab.0.center/0.0.1549.831@0.0.1549.831" timestamp="1603030074250" />
+    <state width="1506" height="213" key="GridCell.Tab.0.left" timestamp="1603030074250">
       <screen x="0" y="0" width="1549" height="831" />
     </state>
-    <state width="1506" height="213" key="GridCell.Tab.0.left/0.0.1549.831@0.0.1549.831" timestamp="1603003187884" />
-    <state width="1506" height="213" key="GridCell.Tab.0.right" timestamp="1603003187884">
+    <state width="1506" height="213" key="GridCell.Tab.0.left/0.0.1549.831@0.0.1549.831" timestamp="1603030074250" />
+    <state width="1506" height="213" key="GridCell.Tab.0.right" timestamp="1603030074250">
       <screen x="0" y="0" width="1549" height="831" />
     </state>
-    <state width="1506" height="213" key="GridCell.Tab.0.right/0.0.1549.831@0.0.1549.831" timestamp="1603003187884" />
+    <state width="1506" height="213" key="GridCell.Tab.0.right/0.0.1549.831@0.0.1549.831" timestamp="1603030074250" />
     <state x="255" y="0" key="SettingsEditor" timestamp="1597068722604">
       <screen x="0" y="0" width="1549" height="831" />
     </state>
@@ -253,9 +251,9 @@
       <screen x="0" y="0" width="1549" height="831" />
     </state>
     <state x="179" y="51" key="new project wizard/0.0.1549.831@0.0.1549.831" timestamp="1595745272513" />
-    <state x="437" y="152" width="672" height="678" key="search.everywhere.popup" timestamp="1602999764105">
+    <state x="437" y="152" width="672" height="678" key="search.everywhere.popup" timestamp="1603025430606">
       <screen x="0" y="0" width="1549" height="831" />
     </state>
-    <state x="437" y="152" width="672" height="678" key="search.everywhere.popup/0.0.1549.831@0.0.1549.831" timestamp="1602999764105" />
+    <state x="437" y="152" width="672" height="678" key="search.everywhere.popup/0.0.1549.831@0.0.1549.831" timestamp="1603025430606" />
   </component>
 </project>

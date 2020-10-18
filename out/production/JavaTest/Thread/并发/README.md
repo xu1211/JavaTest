@@ -7,13 +7,20 @@
 如：同一内存区（变量，数组，或对象）、系统（数据库，web services等）或文件。
 
 ### Java多线程同步解决方案
-- Synchronized锁
-  - [同步代码块](./Synchronized代码块)
-    - [class对象锁](./Synchronized代码块/SynchronizedClass.java)
-    - [obj对象锁](./Synchronized代码块/SynchronizedObj.java)
-    - [this对象锁](./Synchronized代码块/SynchronizedThis.java)
-  - [同步方法](./Synchronized方法)
-    - [静态方法](./Synchronized方法/SynchronizedStaticMethod.java)
-    - [普通方法](./Synchronized方法/SynchronizedMethod.java)
-- Lock锁
-  - [lock](./Lock/lock.java)
+
+- 悲观锁
+    1. Synchronized锁
+          - [同步代码块](./Synchronized代码块)
+            - [class对象锁](./Synchronized代码块/SynchronizedClass.java)
+            - [obj对象锁](./Synchronized代码块/SynchronizedObj.java)
+            - [this对象锁](./Synchronized代码块/SynchronizedThis.java)
+          - [同步方法](./Synchronized方法)
+            - [静态方法](./Synchronized方法/SynchronizedStaticMethod.java)
+            - [普通方法](./Synchronized方法/SynchronizedMethod.java)
+    2. Lock锁
+          - [lock](./Lock/lock.java)
+          - [tryLock](./Lock/TryLockTest1.java)
+          - [lock通讯](./Lock/LockCommunication.java) 类似[/src/Thread/communication/communication.java](../communication/communication.java)
+- 乐观锁 CAS算法
+    - [基于CAS思想的 Atomic 原子类](./CAS/CAS.java)
+    - [ABA问题](./CAS/defectOfABA.java)
