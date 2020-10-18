@@ -22,7 +22,7 @@ public class SynchronizedClassTest2 {
                 public void run() {
                     try {
                         // SynchronizedClass.class唯一，此时同步块加锁有用： 5个线程在同步块代码里是串行执行
-                        // 5个线程最后count=1，因为每个 SynchronizedClass对象都有自己独立的变量 count
+                        // 5个线程最后count都=1，因为每个 SynchronizedClass对象都有自己独立的变量 count
                         synchronizedclass.Class();
                     } catch (InterruptedException e) {
                         e.printStackTrace();

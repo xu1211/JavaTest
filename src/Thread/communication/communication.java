@@ -12,12 +12,13 @@ import java.util.logging.Logger;
  * notifyAll() 唤醒所有
  */
 public class communication {
-    // waiting线程执行条件
+    // 变量go为 waiting线程的执行条件
     private volatile boolean go = false;
 
     public static void main(String args[]) throws InterruptedException {
         final communication test = new communication();
 
+        // wait任务
         Runnable waitTask = new Runnable() {
             @Override
             public void run() {
@@ -29,7 +30,7 @@ public class communication {
                 System.out.println(Thread.currentThread() + " 执行完毕");
             }
         };
-
+        // notify任务
         Runnable notifyTask = new Runnable() {
             @Override
             public void run() {
@@ -60,6 +61,7 @@ public class communication {
 
     /*
      * 只能在 synchronized 或 bock 中调用 wait / notify
+     * shouldGo() and go() 都被锁定在由“this”对象上
      */
     private synchronized void shouldGo() throws InterruptedException {
         System.out.println(Thread.currentThread() + " 获取锁");
@@ -74,9 +76,6 @@ public class communication {
         go = false;
     }
 
-    /*
-     * both shouldGo() and go() are locked on current object referenced by "this" keyword
-     */
     private synchronized void go() {
         System.out.println(Thread.currentThread() + " 开始唤醒线程");
         while (go == false) {
@@ -89,9 +88,6 @@ public class communication {
             // 唤醒 WT1, WT2, WT3 所有
             notifyAll();
         }
-
     }
-
-
 }
 

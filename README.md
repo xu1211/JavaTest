@@ -1,4 +1,4 @@
-[toc]
+@[toc]
 
 # JavaTest
  java实验室
@@ -16,18 +16,16 @@
 - [实现类 apHero](./src/extendsTest/apHero.java)
 - [启动类](./src/extendsTest/GameStart.java)
 
-## [线程](./src/Thread)
+## [多线程](./src/Thread)
 
   - [多线程](./src/Thread/threadTest.java)
-  - [ThreadLocal](./src/Thread/threadLocal/threadLocalTest.java)
-  - [多线程通讯](./src/Thread/communication/communication.java)
   - 线程池
     - [线程池简单实现](./src/Thread/threadPool/MyThreadTest.java)
     - [Java自带线程池](./src/Thread/threadPool/JavaThreadTest.java)
     - [execute 与 submit](./src/Thread/threadPool/submit.java)
-  - 并发编程
-    - [Synchronized同步代码块](./src/Thread/并发/Synchronized代码块)
-    - [Synchronized同步方法](./src/Thread/并发/Synchronized方法)
+  - [多线程通讯](./src/Thread/communication/communication.java)
+  - [并发同步问题](./src/Thread/并发)
+  - [ThreadLocal](./src/Thread/threadLocal/threadLocalTest.java)
        
 ## [数据结构](./src/dataStructure)
 - 数组 array
