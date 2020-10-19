@@ -11,10 +11,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bb6ae969-804f-4729-8286-602af9014c20" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Thread/并发/CAS/Atomic1.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Thread/并发/CAS/CAS.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Thread/并发/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/Thread/并发/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,6 +22,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -69,20 +68,7 @@
       <recent name="D:\Code\github\JavaTest\src\algorithm" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Atomic2">
-    <configuration name="Atomic1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Thread.并发.CAS.Atomic1" />
-      <module name="JavaTest" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Thread.并发.CAS.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Application.use">
     <configuration name="Atomic2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Thread.并发.CAS.Atomic2" />
       <module name="JavaTest" />
@@ -96,12 +82,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LockCommunicationTest1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Thread.并发.Lock.LockCommunicationTest1" />
+    <configuration name="BIOServer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="IO.BIO.BIOServer" />
       <module name="JavaTest" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Thread.并发.Lock.*" />
+          <option name="PATTERN" value="IO.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -109,12 +95,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SynchronizedObjTest2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Thread.并发.Synchronized代码块.SynchronizedObjTest2" />
+    <configuration name="IOClient" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="IO.IOClient" />
       <module name="JavaTest" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Thread.并发.Synchronized代码块.*" />
+          <option name="PATTERN" value="IO.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -122,12 +108,25 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="defectOfABA" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Thread.并发.CAS.defectOfABA" />
+    <configuration name="NIOServer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="IO.NIO.NIOServer" />
       <module name="JavaTest" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Thread.并发.CAS.*" />
+          <option name="PATTERN" value="IO.NIO.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="use" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="proxy.use" />
+      <module name="JavaTest" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="proxy.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -137,11 +136,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.use" />
+        <item itemvalue="Application.BIOClient" />
+        <item itemvalue="Application.NIOServer" />
+        <item itemvalue="Application.BIOServer" />
         <item itemvalue="Application.Atomic2" />
-        <item itemvalue="Application.Atomic1" />
-        <item itemvalue="Application.defectOfABA" />
-        <item itemvalue="Application.LockCommunicationTest1" />
-        <item itemvalue="Application.SynchronizedObjTest2" />
       </list>
     </recent_temporary>
   </component>
@@ -187,7 +186,8 @@
       <workItem from="1602687717961" duration="770000" />
       <workItem from="1602766465398" duration="3757000" />
       <workItem from="1602859692326" duration="2570000" />
-      <workItem from="1602985864227" duration="17033000" />
+      <workItem from="1602985864227" duration="17086000" />
+      <workItem from="1603107975620" duration="10175000" />
     </task>
     <servers />
   </component>
@@ -215,30 +215,30 @@
       <screen x="0" y="0" width="1549" height="831" />
     </state>
     <state x="568" y="321" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.packages/0.0.1549.831@0.0.1549.831" timestamp="1594534805793" />
-    <state x="119" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1602684765419">
+    <state x="119" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1603119117931">
       <screen x="0" y="0" width="1549" height="831" />
     </state>
-    <state x="119" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1549.831@0.0.1549.831" timestamp="1602684765419" />
+    <state x="119" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1549.831@0.0.1549.831" timestamp="1603119117931" />
     <state x="555" y="156" key="FileChooserDialogImpl" timestamp="1597063507778">
       <screen x="0" y="0" width="1549" height="831" />
     </state>
     <state x="555" y="156" key="FileChooserDialogImpl/0.0.1549.831@0.0.1549.831" timestamp="1597063507778" />
-    <state width="1506" height="213" key="GridCell.Tab.0.bottom" timestamp="1603030074250">
+    <state width="1506" height="213" key="GridCell.Tab.0.bottom" timestamp="1603120373063">
       <screen x="0" y="0" width="1549" height="831" />
     </state>
-    <state width="1506" height="213" key="GridCell.Tab.0.bottom/0.0.1549.831@0.0.1549.831" timestamp="1603030074250" />
-    <state width="1506" height="213" key="GridCell.Tab.0.center" timestamp="1603030074250">
+    <state width="1506" height="213" key="GridCell.Tab.0.bottom/0.0.1549.831@0.0.1549.831" timestamp="1603120373063" />
+    <state width="1506" height="213" key="GridCell.Tab.0.center" timestamp="1603120373063">
       <screen x="0" y="0" width="1549" height="831" />
     </state>
-    <state width="1506" height="213" key="GridCell.Tab.0.center/0.0.1549.831@0.0.1549.831" timestamp="1603030074250" />
-    <state width="1506" height="213" key="GridCell.Tab.0.left" timestamp="1603030074250">
+    <state width="1506" height="213" key="GridCell.Tab.0.center/0.0.1549.831@0.0.1549.831" timestamp="1603120373063" />
+    <state width="1506" height="213" key="GridCell.Tab.0.left" timestamp="1603120373063">
       <screen x="0" y="0" width="1549" height="831" />
     </state>
-    <state width="1506" height="213" key="GridCell.Tab.0.left/0.0.1549.831@0.0.1549.831" timestamp="1603030074250" />
-    <state width="1506" height="213" key="GridCell.Tab.0.right" timestamp="1603030074250">
+    <state width="1506" height="213" key="GridCell.Tab.0.left/0.0.1549.831@0.0.1549.831" timestamp="1603120373063" />
+    <state width="1506" height="213" key="GridCell.Tab.0.right" timestamp="1603120373063">
       <screen x="0" y="0" width="1549" height="831" />
     </state>
-    <state width="1506" height="213" key="GridCell.Tab.0.right/0.0.1549.831@0.0.1549.831" timestamp="1603030074250" />
+    <state width="1506" height="213" key="GridCell.Tab.0.right/0.0.1549.831@0.0.1549.831" timestamp="1603120373063" />
     <state x="255" y="0" key="SettingsEditor" timestamp="1597068722604">
       <screen x="0" y="0" width="1549" height="831" />
     </state>
@@ -251,9 +251,9 @@
       <screen x="0" y="0" width="1549" height="831" />
     </state>
     <state x="179" y="51" key="new project wizard/0.0.1549.831@0.0.1549.831" timestamp="1595745272513" />
-    <state x="437" y="152" width="672" height="678" key="search.everywhere.popup" timestamp="1603025430606">
+    <state x="437" y="152" width="672" height="678" key="search.everywhere.popup" timestamp="1603111930609">
       <screen x="0" y="0" width="1549" height="831" />
     </state>
-    <state x="437" y="152" width="672" height="678" key="search.everywhere.popup/0.0.1549.831@0.0.1549.831" timestamp="1603025430606" />
+    <state x="437" y="152" width="672" height="678" key="search.everywhere.popup/0.0.1549.831@0.0.1549.831" timestamp="1603111930609" />
   </component>
 </project>

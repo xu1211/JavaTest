@@ -16,6 +16,14 @@
 - [实现类 apHero](./src/extendsTest/apHero.java)
 - [启动类](./src/extendsTest/GameStart.java)
 
+## IO
+- [BIO](./src/IO/BIO)
+一请求一应答
+- [原生NIO](./src/IO/NIO)
+复杂难用，空轮询 bug 会导致 cpu 飙升 100%
+- Netty NIO
+
+
 ## [多线程](./src/Thread)
 
   - [多线程](./src/Thread/threadTest.java)
@@ -26,7 +34,10 @@
   - [多线程通讯](./src/Thread/communication/communication.java)
   - [并发同步问题](./src/Thread/并发)
   - [ThreadLocal](./src/Thread/threadLocal/threadLocalTest.java)
-       
+
+## 动态代理
+- [JDK 动态代理](./src/proxy/use.java)
+
 ## [数据结构](./src/dataStructure)
 - 数组 array
 - 链表 linked list
