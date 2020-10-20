@@ -36,7 +36,10 @@
   - [ThreadLocal](./src/Thread/threadLocal/threadLocalTest.java)
 
 ## 动态代理
-- [JDK 动态代理](./src/proxy/use.java)
+- [JDK 动态代理](./src/proxy/JDKProxy/proxy.java)
+JDK 动态代理只能代理 实现了接口的类。
+- [CGLIB 动态代理](./src/proxy/CGLIBProxy/proxy.java)
+CGLIB可以代理未实现任何接口的类
 
 ## [数据结构](./src/dataStructure)
 - 数组 array

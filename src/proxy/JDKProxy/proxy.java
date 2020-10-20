@@ -1,4 +1,4 @@
-package proxy;
+package proxy.JDKProxy;
 
 import proxy.JDKProxy.InvocationHandlerImpl;
 import proxy.real.SmsServiceInterface;
@@ -11,7 +11,7 @@ import java.lang.reflect.Proxy;
  * @author xuyuc
  * @since 2020/10/19 22:24
  */
-public class use {
+public class proxy {
     public static void main(String args[]) {
         // 代理的真实对象
         SmsServiceImpl sms = new SmsServiceImpl();
