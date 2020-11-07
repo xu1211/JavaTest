@@ -16,13 +16,15 @@
 - [实现类 apHero](./src/extendsTest/apHero.java)
 - [启动类](./src/extendsTest/GameStart.java)
 
-## IO
-- [BIO](./src/IO/BIO)
-一请求一应答
-- [原生NIO](./src/IO/NIO)
-复杂难用，空轮询 bug 会导致 cpu 飙升 100%
-- Netty NIO
+## [IO](./src/IO)
+- [BIO 同步阻塞](./src/IO/BIO)
 
+一请求一应答, 等待客户端的连接请求时会阻塞, 需要要为每个 Socket 连接开启一个线程
+- [原生NIO 同步非阻塞](./src/IO/NIO)
+
+复杂难用，bug多
+
+- Netty NIO
 
 ## [多线程](./src/Thread)
 
@@ -35,11 +37,11 @@
   - [并发同步问题](./src/Thread/并发)
   - [ThreadLocal](./src/Thread/threadLocal/threadLocalTest.java)
 
-## 动态代理
+## [动态代理](./src/proxy)
 - [JDK 动态代理](./src/proxy/JDKProxy/proxy.java)
-JDK 动态代理只能代理 实现了接口的类。
+只能代理 实现了接口的类
 - [CGLIB 动态代理](./src/proxy/CGLIBProxy/proxy.java)
-CGLIB可以代理未实现任何接口的类
+可以代理 未实现任何接口的类
 
 ## [数据结构](./src/dataStructure)
 - 数组 array
