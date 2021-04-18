@@ -5,4 +5,9 @@ public class SmsService {
         System.out.println("send message:" + message);
         return message;
     }
+
+    public String withdraw(String message) {
+        System.out.println("withdraw message:" + message);
+        return message;
+    }
 }

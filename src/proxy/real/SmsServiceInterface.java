@@ -5,4 +5,5 @@ package proxy.real;
  */
 public interface SmsServiceInterface {
     String send(String message);
+    String withdraw(String message);
 }

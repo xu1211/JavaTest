@@ -17,8 +17,11 @@ public class proxy {
         enhancer.setSuperclass(SmsService.class);
         // 设置方法拦截器
         enhancer.setCallback(new MethodInterceptorImpl());
-        // 创建代理类
+        // 创建代理对象
         SmsService SmsService = (SmsService) enhancer.create();
+
+        // 通过代理对象 调用方法
         SmsService.send("hello cglib代理");
+        SmsService.withdraw("发错了，撤回");
     }
 }

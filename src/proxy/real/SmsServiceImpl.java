@@ -8,4 +8,10 @@ public class SmsServiceImpl implements SmsServiceInterface {
         System.out.println("send message:" + message);
         return message;
     }
+
+    @Override
+    public String withdraw(String message) {
+        System.out.println("withdraw message:" + message);
+        return message;
+    }
 }

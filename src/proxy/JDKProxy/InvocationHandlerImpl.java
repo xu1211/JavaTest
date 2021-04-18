@@ -10,10 +10,9 @@ import java.lang.reflect.Method;
  */
 public class InvocationHandlerImpl implements InvocationHandler {
     /**
-     * 代理类中的真实对象
+     * 传入真实对象
      */
     private final Object target;
-
     public InvocationHandlerImpl(Object target) {
         this.target = target;
     }
@@ -26,12 +25,15 @@ public class InvocationHandlerImpl implements InvocationHandler {
      * @param args 调用参数
      */
     public Object invoke(Object proxy, Method method, Object[] args) throws Throwable {
+        System.out.println("===============================================");
         //调用方法之前，我们可以添加自己的操作
-        System.out.println("调用之前 " + method.getName());
+        System.out.println("调用之前>>>>>");
+        System.out.println("传入的方法：" + method.getName());
+        System.out.println("传入参数：" + args[0]);
         // 当代理对象调用真实对象的方法时，其会自动的跳转到代理对象关联的handler对象的invoke方法来进行调用
         Object result = method.invoke(target, args);
         //调用方法之后，我们同样可以添加自己的操作
-        System.out.println("调用之后 " + method.getName());
+        System.out.println("调用之后>>>>>");
         return result;
     }
 }
