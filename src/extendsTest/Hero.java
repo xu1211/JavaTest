@@ -2,21 +2,24 @@ package extendsTest;
 
 // 抽象类 可以定义属性，非抽象的方法
 public abstract class Hero {
-    String name; //姓名
+    public String name; //姓名
 
-    float hp; //血量
+    public float hp; //血量
 
-    float armor; //护甲
+    public float armor; //护甲
 
-    int moveSpeed; //移动速度
+    public int moveSpeed; //移动速度
 
+    public String getName(){
+        return name;
+    }
     //获取护甲值
-    float getArmor(){
+    public float getArmor(){
         return armor;
     }
 
     //增加移动速度
-    void addSpeed(int speed){
+    public void addSpeed(int speed){
         //在原来的基础上增加移动速度
         moveSpeed = moveSpeed + speed;
     }
