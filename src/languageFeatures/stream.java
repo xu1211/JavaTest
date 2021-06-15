@@ -42,9 +42,10 @@ public class stream {
         max(Comparator)     ：找到最大值。
         collect(Collector)  ：收集器操作
                     Collectors.toList()
+                    Collectors.maxBy()
+                    Collectors.minBy()
                     Collectors.groupingBy() 分组
-                    Collectors.maxBy
-                    Collectors.minBy
+                    Collectors.collectingAndThen() 对归纳的结果进行二次处理
 
 * */
         System.out.println("----串行流:");
