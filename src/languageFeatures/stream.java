@@ -104,7 +104,7 @@ public class stream {
                         .get()
         );
 
-        System.out.println("----最终操作-collect(Collectors.toList())：收集元素到list");
+        System.out.println("----最终操作-collect( Collectors.toList() )：收集元素到list");
         list
                 .stream()
                 .collect(Collectors.toList())
@@ -114,12 +114,25 @@ public class stream {
         Map<String, List<Hero>> map = heros
                 .stream()
                 .collect(Collectors.groupingBy(Hero::getName));
+
         //遍历map
         map.forEach((s, heroList) -> {
                     System.out.println(s + "：");
                     map.get(s).forEach(System.out::println);
                 }
         );
+
+
+        System.out.println("----最终操作-collect( Collectors.collectingAndThen )：根据某字段去重");
+        heros = heros.stream()
+                .collect(
+                        Collectors.collectingAndThen(
+                                Collectors.toCollection(
+                                        () -> new TreeSet<>(Comparator.comparing(Hero::getName))
+                                ), ArrayList::new
+                        )
+                );
+
     }
 
 }

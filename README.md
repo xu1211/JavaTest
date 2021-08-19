@@ -27,10 +27,11 @@
 - Netty NIO
 
 ## 新语法特性
-- [lambda(jdk8)](./src/languageFeatures/lambda.java)
-  
+- jdk8
+    - [lambda](./src/languageFeatures/lambda.java)
+    
   匿名内部类的简化写法
-- [stream(jdk8)](./src/languageFeatures/stream.java)
+    - [stream](./src/languageFeatures/stream.java)
   
   把【集合，数组，I/O channel，产生器generator】转为stream流,
   使stream的每个元素都传入到操作方法里面执行一下
