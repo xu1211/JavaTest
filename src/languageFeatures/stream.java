@@ -31,6 +31,7 @@ public class stream {
         filter(Predicate)   ：对元素进行过滤
         sorted(Comparator)  ：对元素排序
         map(fun)            ：元素映射
+        flatMap()
         distinct()          ：去除重复的元素
         limit(n)            ：获取n个流元素
         skip(n)             ：跳过n个流元素
@@ -42,6 +43,7 @@ public class stream {
         max(Comparator)     ：找到最大值。
         collect(Collector)  ：收集器操作
                     Collectors.toList()
+                    Collectors.toMap()
                     Collectors.maxBy()
                     Collectors.minBy()
                     Collectors.groupingBy() 分组
@@ -114,6 +116,25 @@ public class stream {
         Map<String, List<Hero>> map = heros
                 .stream()
                 .collect(Collectors.groupingBy(Hero::getName));
+        System.out.println("----根据指定字段 分组为map:" + map);
+
+        System.out.println("----最终操作-collect(Collectors.groupingBy)：分组 + 求和");
+        Map<String, Double> result1 = heros.stream()
+                .collect(Collectors.groupingBy(Hero::getName, Collectors.summingDouble(Hero::getArmor)));
+        System.out.println("----分组 + 求和:" + result1);
+
+        System.out.println("----最终操作-collect(Collectors.groupingBy)：分组 + key排序 + 求和");
+        TreeMap<String, Double> result2 = heros.stream()
+                .collect(Collectors.groupingBy(Hero::getName, TreeMap::new, Collectors.summingDouble(Hero::getArmor)));
+        System.out.println("----分组 + key排序 + 求和:" + result2);
+
+        System.out.println("----最终操作-collect(Collectors.groupingBy)：分组 + value排序 + 求和");
+        List<Map.Entry<String, Double>> result3 = heros.stream()
+                .collect(Collectors.groupingBy(Hero::getName, TreeMap::new, Collectors.summingDouble(Hero::getArmor)))
+                .entrySet().stream()
+                .sorted(Map.Entry.comparingByValue(Comparator.reverseOrder()))
+                .collect(Collectors.toList());
+        System.out.println("----分组 + value排序 + 求和:" + result3);
 
         //遍历map
         map.forEach((s, heroList) -> {
